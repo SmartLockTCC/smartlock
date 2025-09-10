@@ -76,24 +76,38 @@ export function Pecas() {
     return(
         <div>
             <Header />
-            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex justify-center items-center px-20 pt-20">
-                <div ref={carouselRef} className="flex overflow-x-auto snap-x scrollbar-hide cursor-grabbing"
+            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex lg:flex-row flex-col justify-center items-center lg:px-20 px-5 lg:pt-20 pt-30">
+                <div ref={carouselRef} className="lg:flex hidden overflow-x-auto snap-x scrollbar-hide cursor-grabbing"
                   onMouseDown={onMouseDown}
                   onMouseLeave={onMouseLeave}
                   onMouseUp={onMouseUp}
                   onMouseMove={onMouseMove}
                   style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}>
                   {cards.map((card, index) => (
-                    <div key={index} className="flex-none w-80 p-4 m-4 bg-gray-produtos rounded-lg snap-start select-none font-inter flex flex-col items-center gap-10">
-                        <h3 className="bg-gray-button w-fit px-10 text-center text-lg rounded-xl border py-3 font-bold">{card.name}</h3>
+                    <div key={index} className="w-80 p-4 m-4 lg:bg-gray-produtos bg-gray-text lg:rounded-lg rounded-4xl snap-start select-none font-inter flex lg:flex-col items-center lg:gap-10 gap-2">
+                        <h3 className="lg:block hidden bg-gray-button w-fit px-10 text-center text-lg rounded-xl border py-3 font-bold">{card.name}</h3>
 
-                        <div className="flex w-60 h-50 justify-center">
+                        <div className="flex lg:w-60 lg:h-50 justify-center">
                             <img src={card.imagem} alt="" />
                         </div>
-
-                        <p className="text-center font-bold text-lg">{card.preco}</p>
+                        <div className="flex flex-col gap-5">
+                          <h3 className="lg:hidden w-fit px-10 text-center text-sm font-bold">{card.name}</h3>
+                          <p className="text-center font-bold text-lg">{card.preco}</p>
+                        </div>
                     </div>
                 ))}</div>
+                {cards.map((card, index) => (
+                <div key={index} className="lg:hidden w-80 p-4 m-4 bg-gray-text rounded-4xl font-inter flex lg:flex-col items-center gap-2">
+
+                        <div className="flex lg:w-60 lg:h-50 justify-center">
+                            <img src={card.imagem} alt="" />
+                        </div>
+                        <div className="flex flex-col gap-5">
+                          <h3 className="lg:hidden w-fit px-10 text-center text-sm font-bold">{card.name}</h3>
+                          <p className="text-center text-header-escuro font-bold text-lg">{card.preco}</p>
+                        </div>
+                </div>))}
+                <Link to={"/Materiais"}><button className="lg:hidden cursor-pointer bg-gray-button px-15 py-2 rounded-xl border text-lg font-bold mb-5">Voltar</button></Link>
             </div>
         </div>
     )
