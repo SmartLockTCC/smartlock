@@ -4,6 +4,7 @@ import ramos from "../assets/ramos.png"
 import job from "../assets/job.png"
 import rosa from "../assets/rosa.png"
 import marcelino from "../assets/marcelino.png"
+import matheus from "../assets/matheus.png"
 
 const cards = [
   {
@@ -30,6 +31,12 @@ const cards = [
     name: "Miguel Marcelino",
     email: "Telefone:+55 11 96832-0078",
     description: ""
+  },
+  {
+    imagem: matheus,
+    name: "Matheus Amorim",
+    email: "Email de Contato: rodriguesamorim0@gmail.com",
+    description: "Telefone: +55 (11) 96494-5232"
   },
 ];
 
@@ -74,7 +81,7 @@ export function SobreNos() {
                           <img src={card.imagem} alt="" />
                       </div>
 
-                      <h3 className="bg-gray-produtos rounded-3xl px-15 text-xl py-1 text-center font-semibold mb-3">{card.name}</h3>
+                      <h3 className="bg-gray-produtos rounded-3xl px-15 text-lg py-1 text-center font-semibold mb-3">{card.name}</h3>
 
                       <div className="bg-gray-descricao h-70 w-70 p-5 rounded-3xl text-xs flex flex-col gap-5">
                         <div>

@@ -5,7 +5,7 @@ export function Instrucao() {
     return(
         <div>
             <Header />
-            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex lg:flex-row flex-col justify-center items-center lg:gap-20 gap-10 lg:px-10 px-5 pt-30 pb-5 font-inter">
+            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex lg:flex-row flex-col justify-center items-center lg:gap-20 gap-10 lg:px-10 px-8 pt-30 pb-5 font-inter">
 
                 <p className="lg:hidden block bg-gray-text w-fit py-10 px-5 lg:text-xl text-lg rounded-xl">Cuidados necessários: <br /> <br />
                     <span className="font-bold text-3xl">.</span> Troque as baterias regularmente para evitar <br /> falhas inesperadas. <br />
