@@ -10,7 +10,7 @@ const cards = [
   {
     imagem: ramos,
     name: "Pedro Ramos",
-    email: "Email de contato: pdr.ramos.duarte@gmail.com",
+    email: "Email de contato: pdr.ramos.duarte @gmail.com",
     description: ""
   },
   {
@@ -35,7 +35,7 @@ const cards = [
   {
     imagem: matheus,
     name: "Matheus Amorim",
-    email: "Email de Contato: rodriguesamorim0@gmail.com",
+    email: "Email de Contato: rodriguesamorim0 @gmail.com",
     description: "Telefone: +55 (11) 96494-5232"
   },
 ];
@@ -68,7 +68,8 @@ export function SobreNos() {
     return(
         <div>
             <Header />
-            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex justify-center items-center pt-20 px-20">
+            <div className="bg-[url('/src/assets/bgInstrucaoClaro.png')] dark:bg-[url('/src/assets/bgInstrucaoEscuro.png')] min-h-screen bg-cover flex  justify-center items-center lg:pt-30 pt-25 lg:px-20 px-5">
+
                 <div ref={carouselRef} className="flex overflow-x-auto snap-x scrollbar-hide cursor-grabbing"
                   onMouseDown={onMouseDown}
                   onMouseLeave={onMouseLeave}
@@ -76,14 +77,14 @@ export function SobreNos() {
                   onMouseMove={onMouseMove}
                   style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}>
                   {cards.map((card, index) => (
-                    <div key={index} className="flex flex-col items-center w-80 p-4 m-4 bg-gray-button rounded-4xl snap-start select-none font-inter">
+                    <div key={index} className="flex flex-col items-center lg:w-80 w-60 p-4 m-4 bg-gray-button rounded-4xl snap-start select-none font-inter">
                       <div className="flex w-40 h-40 justify-center mb-4">
                           <img src={card.imagem} alt="" />
                       </div>
 
-                      <h3 className="bg-gray-produtos rounded-3xl px-15 text-lg py-1 text-center font-semibold mb-3">{card.name}</h3>
+                      <h3 className="bg-gray-produtos rounded-3xl lg:px-15 px-5 text-lg py-1 text-center font-semibold mb-3">{card.name}</h3>
 
-                      <div className="bg-gray-descricao h-70 w-70 p-5 rounded-3xl text-xs flex flex-col gap-5">
+                      <div className="bg-gray-descricao lg:h-70 lg:w-70 w-50 h-60 p-5 rounded-3xl text-xs flex flex-col gap-5">
                         <div>
                           <p>{card.email}</p>
                           <p>{card.youtube}</p>
