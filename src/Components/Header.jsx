@@ -51,10 +51,10 @@ export function Header() {
 
                 <div className="lg:w-15 flex gap-1">
                     <div className="lg:block hidden">
-                        <button className="cursor-pointer dark:hidden block" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={estaAberto}>
+                        <button className="cursor-pointer dark:hidden block" onClick={toggleMenu}>
                             <img src={estaAberto ? setaClaro2 : setaClaro1} alt="" />
                         </button>
-                        <button className="cursor-pointer dark:block hidden" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={estaAberto}>
+                        <button className="cursor-pointer dark:block hidden" onClick={toggleMenu}>
                             <img src={estaAberto ? setaEscuro2 : setaEscuro1} alt="" />
                         </button>
                     </div>
@@ -70,10 +70,10 @@ export function Header() {
                     </div>
 
                     <div className="lg:hidden block w-12">
-                        <button className="cursor-pointer dark:hidden block" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={estaAberto}>
+                        <button className="cursor-pointer dark:hidden block" onClick={toggleMenu}>
                             <img src={menuClaro} alt="" />
                         </button>
-                        <button className="cursor-pointer dark:block hidden" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={estaAberto}>
+                        <button className="cursor-pointer dark:block hidden" onClick={toggleMenu}>
                             <img src={menuEscuro} alt="" />
                         </button>
                     </div>
