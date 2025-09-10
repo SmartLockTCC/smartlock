@@ -78,13 +78,13 @@ export function Header() {
                         </button>
                     </div>
 
-                    <div className={`${estaAberto ? 'block' : 'hidden'} bg-header dark:bg-header-escuro absolute right-0 z-10 h-screen lg:p-15 p-5 w-50vh lg:mt-20 mt-15 lg:pt-20 pt-10`}>
+                    <div className={`${estaAberto ? 'block' : 'hidden'} bg-header dark:bg-header-escuro absolute right-0 z-10 h-screen lg:p-15 p-10 w-50vh lg:mt-20 mt-15 lg:pt-20 pt-10`}>
                         <div className="flex flex-col text-header dark:text-header gap-10 font-inter font-bold lg:text-xl text-center">
-                            <Link to={"/Instrucao"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-3 py-3 rounded-xl">Instrução</Link>
-                            <Link to={"/Jogo"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-3 py-3 rounded-xl">Jogo</Link>
-                            <Link to={"/SobreNos"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-3 py-3 rounded-xl">Sobre Nós</Link>
-                            <Link to={"/Artigos"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-3 py-3 rounded-xl">Artigos</Link>
-                            <Link to={"/Materiais"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-3 py-3 rounded-xl">Materiais</Link>
+                            <Link to={"/Instrucao"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-5 py-3 rounded-xl">Instrução</Link>
+                            <Link to={"/Jogo"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-5 py-3 rounded-xl">Jogo</Link>
+                            <Link to={"/SobreNos"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-5 py-3 rounded-xl">Sobre Nós</Link>
+                            <Link to={"/Artigos"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-5 py-3 rounded-xl">Artigos</Link>
+                            <Link to={"/Materiais"} className="bg-blue-text dark:bg-blue-button lg:px-7 px-5 py-3 rounded-xl">Materiais</Link>
                         </div>
                     </div>
                 </div>
